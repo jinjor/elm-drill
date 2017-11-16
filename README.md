@@ -40,8 +40,8 @@ https://github.com/avh4/elm-format#editor-integration
 (3) このリポジトリをクローンする
 
 ```
-$ git clone https://github.com/jinjor/elm-dril.git
-$ cd elm-dril
+$ git clone https://github.com/jinjor/elm-drill.git
+$ cd elm-drill
 ```
 
 クローンした後、ルートディレクトリに移動します。
