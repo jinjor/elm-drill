@@ -1,14 +1,14 @@
 Elm ドリル
 ====
 
-手を動かしながら Elm のシンタックスに慣れるためのドリルです。
+手を動かしながら Elm の文法に慣れるためのドリルです。
 文法の解説はしていないので別途ドキュメントが必要です。
 このドリルはあくまで手を動かしながら慣れるのと、どこまで理解したかをチェックするために使います。
 
 
 ## ターゲット
 
-JavaScript ユーザー向けです。
+JavaScript ユーザー、あるいは静的型付けや関数型言語にあまり馴染みのない人向けです。
 
 
 ## ゴール
@@ -25,11 +25,11 @@ JavaScript ユーザー向けです。
 
 ```
 $ npm install -g elm
-$ npm install -g elm-format
+$ npm install -g elm-format@exp
 $ npm install -g elm-test
 ```
 
-適宜 sudo 。環境を汚したくない人は各自でよろしくやってください。
+環境を汚したくない人は各自でよろしくやってください。
 
 (2) エディタの設定
 
@@ -72,7 +72,7 @@ decrement n =
 ### 次のセクションに進む
 
 Tests.elm に実行対象のテスト一覧があります。
-`only` のついたものが実行されるので、終わったら次のテストに `only` を付け替えてください。
+`only` のついたものが実行されるので、終わったら（※）次のテストに `only` を付け替えてください。
 
 ```elm
 suite : Test
@@ -90,6 +90,8 @@ suite =
         , T10_Decoders.suite
         ]
 ```
+
+※ `TEST RUN INCOMPLETE because Test.only was used` と表示されます。
 
 ## ヒント
 
