@@ -14,8 +14,8 @@ suite =
         [ testQA "getName" person A.getName A.getName
         , testQA "getName2" person A.getName2 A.getName2
         , testQA "getAge" person A.getAge A.getAge
-        , testQA2 "makeUser" string int A.makeUser A.makeUser
-        , testQA2 "makeUser2" string int A.makeUser2 A.makeUser2
+        , testQA2 "makePerson" string int A.makePerson A.makePerson
+        , testQA2 "makePerson2" string int A.makePerson2 A.makePerson2
         , testQA "incrementAge" person A.incrementAge A.incrementAge
         , testQA "isValid" person A.isValid A.isValid
         , testQA "getRole" roled A.getRole A.getRole

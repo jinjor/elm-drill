@@ -47,16 +47,16 @@ getAge object =
 
 {-| Person 型を作ります
 -}
-makeUser : String -> Int -> Person
-makeUser name age =
+makePerson : String -> Int -> Person
+makePerson name age =
     { name = name, age = age }
 
 
-{-| Person 型を作ります。`User` という名前の関数を使ってレコードを作ることができます。
-型で表すと `Person : String -> Int -> User` となります。
+{-| Person 型を作ります。`Person` という名前の関数を使ってレコードを作ることができます。
+型で表すと `Person : String -> Int -> Person` となります。
 -}
-makeUser2 : String -> Int -> Person
-makeUser2 name age =
+makePerson2 : String -> Int -> Person
+makePerson2 name age =
     Person name age
 
 
@@ -64,14 +64,14 @@ makeUser2 name age =
 全ての値はイミュータブルであるため、元のレコードは変化しません。
 -}
 rename : String -> Person -> Person
-rename newName user =
+rename newName person =
     Debug.crash "TODO"
 
 
 {-| 年齢を1つ増やします
 -}
 incrementAge : Person -> Person
-incrementAge user =
+incrementAge person =
     Debug.crash "TODO"
 
 
@@ -79,7 +79,7 @@ incrementAge user =
 ここでは、名前が空文字や空白文字ではなく、年齢が 0 歳以上であればよしとします。
 -}
 isValid : Person -> Bool
-isValid user =
+isValid person =
     Debug.crash "TODO"
 
 
