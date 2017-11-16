@@ -13,14 +13,14 @@ module A1_Numbers exposing (..)
 -}
 
 
-{-| a に 1 を足して返します
+{-| n に 1 を足して返します
 -}
 increment : Int -> Int
 increment n =
     n + 1
 
 
-{-| a から 1 を引いて返します
+{-| n から 1 を引いて返します
 -}
 decrement : Int -> Int
 decrement n =

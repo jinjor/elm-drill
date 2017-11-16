@@ -13,17 +13,17 @@ module Q1_Numbers exposing (..)
 -}
 
 
-{-| a に 1 を足して返します
+{-| n に 1 を足して返します
 -}
 increment : Int -> Int
-increment a =
-    a + 1
+increment n =
+    n + 1
 
 
-{-| a から 1 を引いて返します
+{-| n から 1 を引いて返します
 -}
 decrement : Int -> Int
-decrement a =
+decrement n =
     Debug.crash "TODO"
 
 

@@ -59,7 +59,7 @@ elm-test Tests.elm
 関数が実装されていないので失敗します。src/Q1_Numbers を見てください。
 
 ```elm
-{-| a から 1 を引いて返します
+{-| n から 1 を引いて返します
 -}
 decrement : Int -> Int
 decrement n =

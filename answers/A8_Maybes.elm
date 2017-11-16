@@ -50,7 +50,7 @@ type alias Person =
     }
 
 
-{-| Person 型の値を作ります。ただし `age` は初期値に何もセットされていません。
+{-| Person 型の値を作ります。ただし `age` と `image` は初期値に何もセットされていません。
 -}
 createPerson : String -> Person
 createPerson name =
