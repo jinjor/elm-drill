@@ -29,6 +29,9 @@ concat a b =
 
 
 {-| 文字列 a と b を `,` で結合します
+
+    concatWithComma "foo" "bar" --> "foo,bar"
+
 -}
 concatWithComma : String -> String -> String
 concatWithComma a b =
