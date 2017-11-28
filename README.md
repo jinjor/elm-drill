@@ -53,7 +53,7 @@ $ cd elm-drill
 それぞれの問題はユニットテストになっています。以下のコマンドで実行できます。
 
 ```sh
-elm-test Tests.elm
+elm-test tests/Tests.elm
 ```
 
 関数が実装されていないので失敗します。src/Q1_Numbers を見てください。
@@ -71,7 +71,7 @@ decrement n =
 
 ### 次のセクションに進む
 
-Tests.elm に実行対象のテスト一覧があります。
+tests/Tests.elm に実行対象のテスト一覧があります。
 `only` のついたものが実行されるので、終わったら（※）次のテストに `only` を付け替えてください。
 
 ```elm
