@@ -223,9 +223,4 @@ zipWithIndex list =
 -}
 removeAt : Int -> List a -> List a
 removeAt index list =
-    case List.drop index list of
-        [] ->
-            []
-
-        _ :: xs ->
-            xs
+    List.take index list ++ List.drop (index + 1)
