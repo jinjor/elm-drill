@@ -96,7 +96,15 @@ showNumbers list =
 -}
 showNumbers2 : List Int -> String
 showNumbers2 list =
-    List.foldl (\n s -> toString n ++ s) "" list
+    List.foldl
+        (\n s ->
+            if s == "" then
+                toString n
+            else
+                s ++ "," ++ toString n
+        )
+        ""
+        list
 
 
 {-| リストの長さを再帰的に調べます。
@@ -223,4 +231,4 @@ zipWithIndex list =
 -}
 removeAt : Int -> List a -> List a
 removeAt index list =
-    List.take index list ++ List.drop (index + 1)
+    List.take index list ++ List.drop (index + 1) list
