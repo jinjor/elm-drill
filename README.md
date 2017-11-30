@@ -53,10 +53,10 @@ $ cd elm-drill
 それぞれの問題はユニットテストになっています。以下のコマンドで実行できます。
 
 ```sh
-elm-test tests/Tests.elm
+$ elm-test tests/Tests.elm
 ```
 
-関数が実装されていないので失敗します。src/Q1_Numbers を見てください。
+関数が実装されていないので失敗します。src/Q1_Numbers.elm を見てください。
 
 ```elm
 {-| n から 1 を引いて返します
