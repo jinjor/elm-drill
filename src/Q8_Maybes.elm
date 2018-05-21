@@ -12,14 +12,14 @@ module Q8_Maybes exposing (..)
 -}
 
 
-{-| リストの最初の値があった場合はその値を文字列にし、なかった場合はその旨の文言を返します。
+{-| リストの最初の値があった場合はその値をデバッグ用の文字列にし、なかった場合はその旨の文言を返します。
 Maybe は Just a または Nothing の形にパターンマッチできます。
 -}
 showFirstValue : List a -> String
 showFirstValue list =
     case List.head list of
         Just a ->
-            toString a
+            Debug.toString a
 
         Nothing ->
             "not found"

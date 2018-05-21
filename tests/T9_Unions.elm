@@ -12,7 +12,7 @@ suite : Test
 suite =
     describe "Unions"
         [ testQA "greet" lang Q.greet A.greet
-        , testQA "listGreetings" (map (\s lang -> toString lang ++ s) string) Q.listGreetings A.listGreetings
+        , testQA "listGreetings" (map (\s lang -> Debug.toString lang ++ s) string) Q.listGreetings A.listGreetings
         , testQA "message" user Q.message A.message
         , testQA "makeLoginUser" string Q.makeLoginUser A.makeLoginUser
         , testQA "makeLoginUsers" (list string) Q.makeLoginUsers A.makeLoginUsers

@@ -59,12 +59,12 @@ contains a s =
     String.contains a s
 
 
-{-| 任意の値を文字列に変換します。
+{-| 任意の値をデバッグ用の文字列に変換します。
 引数の型 `a` （小文字）は任意の型を表します。
 -}
 show : a -> String
 show a =
-    toString a
+    Debug.toString a
 
 
 {-| 80 文字より長ければ True を返します

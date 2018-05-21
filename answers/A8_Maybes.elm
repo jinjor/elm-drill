@@ -12,7 +12,8 @@ module A8_Maybes exposing (..)
 -}
 
 
-{-| リストの最初の値があった場合はその値を文字列にし、なかった場合はその旨の文言を返します。
+{-| リストの最初の値があった場合はその値をデバッグ用の文字列にし、
+なかった場合はその旨の文言を返します。
 Maybe は Just a または Nothing の形にパターンマッチできます。
 -}
 showFirstValue : List a -> String
@@ -39,6 +40,7 @@ average : List Float -> Maybe Float
 average list =
     if list == [] then
         Nothing
+
     else
         Just (List.sum list / toFloat (List.length list))
 

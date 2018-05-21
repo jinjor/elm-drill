@@ -49,7 +49,7 @@ range from to =
     List.range from to
 
 
-{-| それぞれの要素を toString したリストを返します。
+{-| それぞれの要素を文字列化したリストを返します。
 
     // JavaScript
     [1,2,3].map(a => a.toString())
@@ -57,7 +57,7 @@ range from to =
 -}
 toStringList : List Int -> List String
 toStringList list =
-    List.map toString list
+    List.map String.fromInt list
 
 
 {-| それぞれの要素を２倍したリストを返します。
@@ -87,7 +87,7 @@ toEvenList list =
 showNumbers : List Int -> String
 showNumbers list =
     list
-        |> List.map toString
+        |> List.map String.fromInt
         |> String.join ","
 
 
@@ -99,9 +99,10 @@ showNumbers2 list =
     List.foldl
         (\n s ->
             if s == "" then
-                toString n
+                String.fromInt n
+
             else
-                s ++ "," ++ toString n
+                s ++ "," ++ String.fromInt n
         )
         ""
         list

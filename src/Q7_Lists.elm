@@ -49,7 +49,7 @@ range from to =
     Debug.todo "TODO"
 
 
-{-| それぞれの要素を toString したリストを返します。
+{-| それぞれの要素を Debug.toString したリストを返します。
 
     // JavaScript
     [1,2,3].map(a => a.toString())

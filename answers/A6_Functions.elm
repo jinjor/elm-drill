@@ -23,6 +23,7 @@ greet : Bool -> String
 greet isJapanese =
     if isJapanese then
         "こんにちは"
+
     else
         "Hello"
 
@@ -36,6 +37,7 @@ greetSomeone isJapanese name =
         greeting =
             if isJapanese then
                 "こんにちは"
+
             else
                 "Hello"
     in
@@ -50,7 +52,7 @@ formatTime ( hour, minute ) =
         pad =
             String.padLeft 2 '0'
     in
-    pad (toString hour) ++ ":" ++ pad (toString minute)
+    pad (String.fromInt hour) ++ ":" ++ pad (String.fromInt minute)
 
 
 {-| `String.trim`, `String.toUpper`, `String.reverse` を連続して適用します。
@@ -111,6 +113,7 @@ factorial : Int -> Int
 factorial n =
     if n == 0 then
         1
+
     else
         n * factorial (n - 1)
 
@@ -126,8 +129,10 @@ fibonacci : Int -> Int
 fibonacci n =
     if n == 0 then
         0
+
     else if n == 1 then
         1
+
     else
         fibonacci (n - 1) + fibonacci (n - 2)
 
@@ -138,6 +143,7 @@ series : Int -> Int
 series n =
     if n == 0 then
         0
+
     else
         n + series (n - 1)
 
@@ -155,5 +161,6 @@ series2Help : Int -> Int -> Int
 series2Help sum n =
     if n == 0 then
         sum
+
     else
         series2Help (sum + n) (n - 1)
