@@ -23,6 +23,7 @@ greet : Bool -> String
 greet isJapanese =
     if isJapanese then
         "こんにちは"
+
     else
         Debug.crash "TODO"
 
@@ -36,6 +37,7 @@ greetSomeone isJapanese name =
         greeting =
             if isJapanese then
                 "こんにちは"
+
             else
                 Debug.crash "TODO"
     in
@@ -111,6 +113,7 @@ factorial : Int -> Int
 factorial n =
     if n == 0 then
         1
+
     else
         Debug.crash "TODO"
 
@@ -126,8 +129,10 @@ fibonacci : Int -> Int
 fibonacci n =
     if n == 0 then
         0
+
     else if n == 1 then
         1
+
     else
         Debug.crash "TODO"
 
@@ -152,5 +157,6 @@ series2Help : Int -> Int -> Int
 series2Help sum n =
     if n == 0 then
         sum
+
     else
         Debug.crash "TODO"
