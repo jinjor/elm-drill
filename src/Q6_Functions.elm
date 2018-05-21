@@ -25,7 +25,7 @@ greet isJapanese =
         "こんにちは"
 
     else
-        Debug.crash "TODO"
+        Debug.todo "TODO"
 
 
 {-| ２ヶ国語の挨拶で誰かに呼びかけています。
@@ -39,7 +39,7 @@ greetSomeone isJapanese name =
                 "こんにちは"
 
             else
-                Debug.crash "TODO"
+                Debug.todo "TODO"
     in
     greeting ++ ", " ++ name
 
@@ -52,7 +52,7 @@ formatTime ( hour, minute ) =
         pad =
             String.padLeft 2 '0'
     in
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| `String.trim`, `String.toUpper`, `String.reverse` を連続して適用します。
@@ -66,14 +66,14 @@ trimAndToUpperAndReverse s =
 -}
 trimAndToUpperAndReverseWithoutParens : String -> String
 trimAndToUpperAndReverseWithoutParens s =
-    Debug.crash "(function)" <| Debug.crash "(function)" <| Debug.crash "(function)" s
+    Debug.todo "(function)" <| Debug.todo "(function)" <| Debug.todo "(function)" s
 
 
 {-| `<<` を使うと関数を合成できます
 -}
 trimAndToUpperAndReverseComposed : String -> String
 trimAndToUpperAndReverseComposed =
-    Debug.crash "(function)" << Debug.crash "(function)" << Debug.crash "(function)"
+    Debug.todo "(function)" << Debug.todo "(function)" << Debug.todo "(function)"
 
 
 {-| `|>` を使うと左から右（上から下）に読むことができます
@@ -81,18 +81,18 @@ trimAndToUpperAndReverseComposed =
 trimAndToUpperAndReverseLeftToRight : String -> String
 trimAndToUpperAndReverseLeftToRight s =
     s
-        |> Debug.crash "(function)"
-        |> Debug.crash "(function)"
-        |> Debug.crash "(function)"
+        |> Debug.todo "(function)"
+        |> Debug.todo "(function)"
+        |> Debug.todo "(function)"
 
 
 {-| `>>` を使うと左から右に読めるように合成できます
 -}
 trimAndToUpperAndReverseLeftToRightComposed : String -> String
 trimAndToUpperAndReverseLeftToRightComposed =
-    Debug.crash "(function)"
-        >> Debug.crash "(function)"
-        >> Debug.crash "(function)"
+    Debug.todo "(function)"
+        >> Debug.todo "(function)"
+        >> Debug.todo "(function)"
 
 
 {-| 階乗を計算します。(n >= 0)
@@ -115,7 +115,7 @@ factorial n =
         1
 
     else
-        Debug.crash "TODO"
+        Debug.todo "TODO"
 
 
 {-| フィボナッチ数を計算します
@@ -134,14 +134,14 @@ fibonacci n =
         1
 
     else
-        Debug.crash "TODO"
+        Debug.todo "TODO"
 
 
 {-| 1 から n までの和を計算します
 -}
 series : Int -> Int
 series n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 1 から n までの和を計算します。
@@ -159,4 +159,4 @@ series2Help sum n =
         sum
 
     else
-        Debug.crash "TODO"
+        Debug.todo "TODO"

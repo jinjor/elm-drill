@@ -18,67 +18,67 @@ module Q2_Booleans exposing (..)
 -}
 alwaysTrue : a -> Bool
 alwaysTrue _ =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 演算子を使って両方とも True の時 True を返します
 -}
 and : Bool -> Bool -> Bool
 and a b =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 演算子を使ってどちらかが True の時 True を返します
 -}
 or : Bool -> Bool -> Bool
 or a b =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 0 より大きければ True を返します
 -}
 isPositive : Int -> Bool
 isPositive n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 0 より小さければ True を返します
 -}
 isNegative : Int -> Bool
 isNegative n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 引数がちょうど 42 なら True を返します
 -}
 is42 : Int -> Bool
 is42 n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 引数が 42 でない時 True を返します
 -}
 isNot42 : Int -> Bool
 isNot42 n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 偶数ならば True を返します
 -}
 isEven : Int -> Bool
 isEven n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 両方とも偶数ならば True を返します
 -}
 areEven : Int -> Int -> Bool
 areEven a b =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 0 より大きい偶数ならば True を返します
 -}
 isPositiveAndEven : Int -> Bool
 isPositiveAndEven n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"

@@ -29,14 +29,14 @@ showFirstValue list =
 -}
 getFirstNumber : List Int -> Int
 getFirstNumber list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 要素の平均値を求めます。ただしリストが空の場合は Nothing を返します。
 -}
 average : List Float -> Maybe Float
 average list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 type alias Person =
@@ -50,11 +50,11 @@ type alias Person =
 -}
 createPerson : String -> Person
 createPerson name =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 入力されている年齢を全て収集します
 -}
 getAges : List Person -> List Int
 getAges people =
-    Debug.crash "TODO"
+    Debug.todo "TODO"

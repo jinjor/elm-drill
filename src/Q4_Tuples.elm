@@ -31,14 +31,14 @@ makePair2 a b =
 -}
 makeTriplet : Int -> String -> Bool -> ( Int, String, Bool )
 makeTriplet a b c =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 2つの値のうち、最初の値を取り出します
 -}
 getFirstValue : ( Float, Float ) -> Float
 getFirstValue pair =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 2つの値のうち、最初の値を取り出します。
@@ -46,7 +46,7 @@ getFirstValue pair =
 -}
 getFirstValue2 : ( Float, Float ) -> Float
 getFirstValue2 ( a, b ) =
-    Debug.crash "TODO" ()
+    Debug.todo "TODO" ()
 
 
 {-| 2つの値からなるベクトル同士を足し合わせます
@@ -56,7 +56,7 @@ getFirstValue2 ( a, b ) =
 -}
 addVectors : ( Float, Float ) -> ( Float, Float ) -> ( Float, Float )
 addVectors ( x1, y1 ) ( x2, y2 ) =
-    Debug.crash "TODO" ()
+    Debug.todo "TODO" ()
 
 
 {-| 2つの値を入れ替えます。
@@ -65,7 +65,7 @@ addVectors ( x1, y1 ) ( x2, y2 ) =
 -}
 swap : ( a, b ) -> ( b, a )
 swap ( a, b ) =
-    Debug.crash "TODO" ()
+    Debug.todo "TODO" ()
 
 
 {-| 3つの値のうち、最後のものを取得します。
@@ -74,4 +74,4 @@ swap ( a, b ) =
 -}
 getLast : ( first, second, third ) -> third
 getLast ( _, _, thisIsTheLastOne ) =
-    Debug.crash "TODO" ()
+    Debug.todo "TODO" ()

@@ -1,23 +1,17 @@
-Elm ドリル
-====
+# Elm ドリル
 
-手を動かしながら Elm の文法に慣れるためのドリルです。
-文法の解説はしていないので別途ドキュメントが必要です。
-このドリルはあくまで手を動かしながら慣れるのと、どこまで理解したかをチェックするために使います。
-
+手を動かしながら Elm の文法に慣れるためのドリルです。文法の解説はしていないので別途ドキュメントが必要です。このドリルはあくまで手を動かしながら慣れるのと、どこまで理解したかをチェックするために使います。
 
 ## ターゲット
 
 JavaScript ユーザー、あるいは静的型付けや関数型言語にあまり馴染みのない人向けです。
 
-
 ## ゴール
 
-- 関数型言語の基本的な作法が分かる
-- 型が読めるようになる
-- [公式ガイド](https://guide.elm-lang.org/)や[API ドキュメント](http://package.elm-lang.org/)を読んで理解できるようになる
-- 既存コードに手が入れられるようになる
-
+* 関数型言語の基本的な作法が分かる
+* 型が読めるようになる
+* [公式ガイド](https://guide.elm-lang.org/)や[API ドキュメント](http://package.elm-lang.org/)を読んで理解できるようになる
+* 既存コードに手が入れられるようになる
 
 ## 準備
 
@@ -25,7 +19,7 @@ JavaScript ユーザー、あるいは静的型付けや関数型言語にあま
 
 ```
 $ npm install -g elm
-$ npm install -g elm-format@exp
+$ npm install -g elm-format
 $ npm install -g elm-test
 ```
 
@@ -35,7 +29,6 @@ $ npm install -g elm-test
 
 elm-format がエディタから動くようにします。
 https://github.com/avh4/elm-format#editor-integration
-
 
 (3) このリポジトリをクローンする
 
@@ -63,11 +56,10 @@ $ elm-test tests/Tests.elm
 -}
 decrement : Int -> Int
 decrement n =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 ```
 
-`Debug.crash "TODO"` を埋めましょう。
-
+`Debug.todo "TODO"` を埋めましょう。
 
 ### 次のセクションに進む
 
@@ -95,21 +87,19 @@ suite =
 
 ## ヒント
 
-- 極力ライブラリに用意されている関数を使ってください
-- 0 割りなどのエッジケースは省いてあるので気にしなくて大丈夫です
-- 外部パッケージをインストールして使うことはありません
-- 答えは answers/ 以下にあります
+* 極力ライブラリに用意されている関数を使ってください
+* 0 割りなどのエッジケースは省いてあるので気にしなくて大丈夫です
+* 外部パッケージをインストールして使うことはありません
+* 答えは answers/ 以下にあります
 
 ## 主な学習リソース
 
-- [公式サイト](http://elm-lang.org/)
-- [ガイド](https://guide.elm-lang.org/)
-- [API](http://package.elm-lang.org/)
-- [標準ライブラリ](http://package.elm-lang.org/packages/elm-lang/core/latest)
-- [関数プログラミング](https://evancz.gitbooks.io/functional-programming-in-elm/)
-
+* [公式サイト](http://elm-lang.org/)
+* [ガイド](https://guide.elm-lang.org/)
+* [API](http://package.elm-lang.org/)
+* [標準ライブラリ](http://package.elm-lang.org/packages/elm-lang/core/latest)
+* [関数プログラミング](https://evancz.gitbooks.io/functional-programming-in-elm/)
 
 ## その他
 
-不具合・改善点があれば issue や Twitter で教えてください。
-このリソースの転用は自由です。
+不具合・改善点があれば issue や Twitter で教えてください。このリソースの転用は自由です。

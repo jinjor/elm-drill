@@ -39,14 +39,14 @@ numbers2 =
 -}
 length : List a -> Int
 length list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| from から to までの数字が入ったリストを返します
 -}
 range : Int -> Int -> List Int
 range from to =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| それぞれの要素を toString したリストを返します。
@@ -57,7 +57,7 @@ range from to =
 -}
 toStringList : List Int -> List String
 toStringList list =
-    List.map (Debug.crash "TODO") list
+    List.map (Debug.todo "TODO") list
 
 
 {-| それぞれの要素を２倍したリストを返します。
@@ -69,14 +69,14 @@ toStringList list =
 -}
 toDoubledList : List Int -> List Int
 toDoubledList list =
-    List.map (\a -> Debug.crash "TODO") list
+    List.map (\a -> Debug.todo "TODO") list
 
 
 {-| 偶数だけを残したリストを返します
 -}
 toEvenList : List Int -> List Int
 toEvenList list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 数値をカンマ区切りの文字列にします。
@@ -87,8 +87,8 @@ toEvenList list =
 showNumbers : List Int -> String
 showNumbers list =
     list
-        |> Debug.crash "List.xxx"
-        |> Debug.crash "String.xxxx"
+        |> Debug.todo "List.xxx"
+        |> Debug.todo "String.xxxx"
 
 
 {-| 同じく、数値をカンマ区切りの文字列にします。
@@ -96,7 +96,7 @@ showNumbers list =
 -}
 showNumbers2 : List Int -> String
 showNumbers2 list =
-    List.foldl (\n s -> Debug.crash "TODO") "" list
+    List.foldl (\n s -> Debug.todo "TODO") "" list
 
 
 {-| リストの長さを再帰的に調べます。
@@ -123,7 +123,7 @@ mySum list =
             0
 
         x :: xs ->
-            Debug.crash "TODO"
+            Debug.todo "TODO"
 
 
 {-| 要素の総和を再帰的に求めます。
@@ -142,7 +142,7 @@ mySum2Help sum list =
             sum
 
         x :: xs ->
-            Debug.crash "TODO"
+            Debug.todo "TODO"
 
 
 {-| 最初の要素が "Hello" であれば True を返します。
@@ -186,21 +186,21 @@ beginsWithHelloWorld2 list =
 -}
 member : a -> List a -> Bool
 member a list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 与えられた関数を満たす要素をリストで返します
 -}
 collect : (a -> Bool) -> List a -> List a
 collect satisfy list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| x の小さい順に並び替えます
 -}
 sortByX : List { x : Int, y : Int } -> List { x : Int, y : Int }
 sortByX list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 2つのリストの要素を対にしたリストを作ります
@@ -208,7 +208,7 @@ zip [1,2,3]["a", "b"] ==> [(1,"a"), (2,"b")]
 -}
 zip : List a -> List b -> List ( a, b )
 zip list1 list2 =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| インデックスと要素を対にしたリストを作ります
@@ -216,11 +216,11 @@ zipWithIndex ["foo", "bar"] ==> [(0,"foo"), (1,"bar")]
 -}
 zipWithIndex : List a -> List ( a, b )
 zipWithIndex list =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
 
 
 {-| 指定したインデックスの要素を削除します
 -}
 removeAt : Int -> List a -> List a
 removeAt index =
-    Debug.crash "TODO"
+    Debug.todo "TODO"
