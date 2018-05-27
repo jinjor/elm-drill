@@ -67,18 +67,18 @@ isNot42 n =
 -}
 isEven : Int -> Bool
 isEven n =
-    modBy 2 n == 0
+    remainderBy 2 n == 0
 
 
 {-| 両方とも偶数ならば True を返します
 -}
 areEven : Int -> Int -> Bool
 areEven a b =
-    modBy 2 a == 0 && modBy 2 b == 0
+    remainderBy 2 a == 0 && remainderBy 2 b == 0
 
 
 {-| 0 より大きい偶数ならば True を返します
 -}
 isPositiveAndEven : Int -> Bool
 isPositiveAndEven n =
-    n > 0 && modBy 2 n == 0
+    n > 0 && remainderBy 2 n == 0

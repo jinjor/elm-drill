@@ -20,7 +20,7 @@ showFirstValue : List a -> String
 showFirstValue list =
     case List.head list of
         Just a ->
-            toString a
+            Debug.toString a
 
         Nothing ->
             "not found"

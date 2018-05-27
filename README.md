@@ -18,9 +18,9 @@ JavaScript ユーザー、あるいは静的型付けや関数型言語にあま
 (1) 環境を用意する
 
 ```
-$ npm install -g elm
+$ npm install -g elm@0.19
 $ npm install -g elm-format
-$ npm install -g elm-test
+$ npm install -g elm-test@0.19
 ```
 
 環境を汚したくない人は各自でよろしくやってください。

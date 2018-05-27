@@ -24,7 +24,7 @@ makePair a b =
 -}
 makePair2 : Int -> String -> ( Int, String )
 makePair2 a b =
-    (,) a b
+    Tuple.pair a b
 
 
 {-| 3つの組を作ります

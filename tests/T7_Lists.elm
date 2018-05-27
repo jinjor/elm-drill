@@ -25,7 +25,7 @@ suite =
         , testQA "beginsWithHelloWorld" (list string) Q.beginsWithHelloWorld A.beginsWithHelloWorld
         , testQA "beginsWithHelloWorld2" (list (t2 string string)) Q.beginsWithHelloWorld2 A.beginsWithHelloWorld2
         , testQA2 "member" string (list string) Q.member A.member
-        , testQA2 "collect" (map (\i n -> n % i == 0) (intRange 1 5)) (list int) Q.collect A.collect
+        , testQA2 "collect" (map (\i n -> remainderBy i n == 0) (intRange 1 5)) (list int) Q.collect A.collect
         , testQA "sortByX" (list (map2 Position int int)) Q.sortByX A.sortByX
         , testQA2 "zip" (list float) (list string) Q.zip A.zip
         , testQA "zipWithIndex" (list int) Q.zipWithIndex A.zipWithIndex

@@ -14,7 +14,6 @@ module A10_Decoders exposing (..)
 
 import Json.Decode as D exposing (Decoder)
 import Json.Encode
-import Time exposing (Time)
 
 
 {-| `1` という JSON 値を Int に変換するデコーダーです
@@ -89,7 +88,7 @@ pointListDecoder =
 
 
 type alias Message a =
-    { createdAt : Time
+    { createdAt : Float
     , createdBy : String
     , content : a
     }

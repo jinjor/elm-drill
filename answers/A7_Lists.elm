@@ -76,7 +76,7 @@ toDoubledList list =
 -}
 toEvenList : List Int -> List Int
 toEvenList list =
-    List.filter (\a -> a % 2 == 0) list
+    List.filter (\a -> remainderBy 2 a == 0) list
 
 
 {-| 数値をカンマ区切りの文字列にします。
@@ -217,7 +217,7 @@ zip [1,2,3]["a", "b"] ==> [(1,"a"), (2,"b")]
 -}
 zip : List a -> List b -> List ( a, b )
 zip list1 list2 =
-    List.map2 (,) list1 list2
+    List.map2 Tuple.pair list1 list2
 
 
 {-| インデックスと要素を対にしたリストを作ります
@@ -225,7 +225,7 @@ zipWithIndex ["foo", "bar"] ==> [(0,"foo"), (1,"bar")]
 -}
 zipWithIndex : List a -> List ( Int, a )
 zipWithIndex list =
-    List.indexedMap (,) list
+    List.indexedMap Tuple.pair list
 
 
 {-| 指定したインデックスの要素を削除します
