@@ -37,8 +37,6 @@ $ git clone https://github.com/jinjor/elm-drill.git
 $ cd elm-drill
 ```
 
-クローンした後、ルートディレクトリに移動します。
-
 ## 進め方
 
 ### 問題を解く
@@ -94,10 +92,10 @@ suite =
 
 ## 主な学習リソース
 
-* [公式サイト](http://elm-lang.org/)
+* [公式サイト](https://elm-lang.org/)
 * [ガイド](https://guide.elm-lang.org/)
-* [API](http://package.elm-lang.org/)
-* [標準ライブラリ](http://package.elm-lang.org/packages/elm-lang/core/latest)
+* [API](https://package.elm-lang.org/)
+* [標準ライブラリ](https://package.elm-lang.org/packages/elm/core/latest)
 * [関数プログラミング](https://evancz.gitbooks.io/functional-programming-in-elm/)
 
 ## その他
