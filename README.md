@@ -10,7 +10,7 @@ JavaScript ユーザー、あるいは静的型付けや関数型言語にあま
 
 * 関数型言語の基本的な作法が分かる
 * 型が読めるようになる
-* [公式ガイド](https://guide.elm-lang.org/)や[API ドキュメント](http://package.elm-lang.org/)を読んで理解できるようになる
+* [公式ガイド](https://guide.elm-lang.org/)や[API ドキュメント](https://package.elm-lang.org/)を読んで理解できるようになる
 * 既存コードに手が入れられるようになる
 
 ## 準備
@@ -18,9 +18,9 @@ JavaScript ユーザー、あるいは静的型付けや関数型言語にあま
 (1) 環境を用意する
 
 ```
-$ npm install -g elm@0.19
+$ npm install -g elm
 $ npm install -g elm-format
-$ npm install -g elm-test@0.19
+$ npm install -g elm-test@beta # 執筆時点で latest が Elm 0.19 に対応していないため
 ```
 
 環境を汚したくない人は各自でよろしくやってください。
@@ -76,7 +76,7 @@ suite =
         , T6_Functions.suite
         , T7_Lists.suite
         , T8_Maybes.suite
-        , T9_Unions.suite
+        , T9_CustomTypes.suite
         , T10_Decoders.suite
         ]
 ```

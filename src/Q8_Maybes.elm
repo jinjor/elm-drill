@@ -1,4 +1,4 @@
-module Q8_Maybes exposing (..)
+module Q8_Maybes exposing (Person, average, createPerson, getAges, getFirstNumber, showFirstValue)
 
 {-| Maybe
 
@@ -7,7 +7,7 @@ module Q8_Maybes exposing (..)
 参照:
 
   - <https://guide.elm-lang.org/error_handling/maybe.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Maybe>
+  - <https://package.elm-lang.org/packages/elm/core/latest/Maybe>
 
 -}
 

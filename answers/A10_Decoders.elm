@@ -8,7 +8,7 @@ module A10_Decoders exposing (..)
 参照:
 
   - <https://guide.elm-lang.org/interop/json.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Decode>
+  - <https://package.elm-lang.org/packages/elm/json/latest/Json-Decode>
 
 -}
 

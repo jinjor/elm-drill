@@ -1,9 +1,9 @@
-module T9_Unions exposing (..)
+module T9_CustomTypes exposing (..)
 
-import A9_Unions as A
+import A9_CustomTypes as A
 import Expect exposing (Expectation)
 import Fuzz exposing (..)
-import Q9_Unions as Q exposing (Article, FetchState(..), Language(..), User(..))
+import Q9_CustomTypes as Q exposing (Article, FetchState(..), Language(..), User(..))
 import Test exposing (..)
 import TestUtil exposing (t2, testQA, testQA2)
 

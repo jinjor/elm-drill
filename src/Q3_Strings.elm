@@ -1,4 +1,4 @@
-module Q3_Strings exposing (..)
+module Q3_Strings exposing (concat, concatWith, concatWithComma, contains, containsCaseInsensitive, fromChar, hasMoreThan80Chars, helloWorld, length, reverse, show)
 
 {-| 文字列
 
@@ -7,9 +7,9 @@ module Q3_Strings exposing (..)
 
 参照:
 
-  - <https://guide.elm-lang.org/core_language.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/String>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Char>
+  - [https://guide.elm-lang.org/core\_language.html](https://guide.elm-lang.org/core_language.html)
+  - <https://package.elm-lang.org/packages/elm/core/latest/String>
+  - <https://package.elm-lang.org/packages/elm/core/latest/Char>
 
 -}
 

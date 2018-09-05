@@ -8,7 +8,7 @@ module A1_Numbers exposing (..)
 参照:
 
   - <https://guide.elm-lang.org/core_language.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Basics>
+  - <https://package.elm-lang.org/packages/elm/core/latest/Basics>
 
 -}
 

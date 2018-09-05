@@ -1,4 +1,4 @@
-module Q7_Lists exposing (..)
+module Q7_Lists exposing (beginsWithHello, beginsWithHelloWorld, beginsWithHelloWorld2, collect, emptyList, length, member, myLength, mySum, mySum2, mySum2Help, numbers, numbers2, range, removeAt, showNumbers, showNumbers2, sortByX, toDoubledList, toEvenList, toStringList, zip, zipWithIndex)
 
 {-| リスト
 
@@ -6,8 +6,8 @@ module Q7_Lists exposing (..)
 
 参照:
 
-  - <https://guide.elm-lang.org/core_language.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/List>
+  - [https://guide.elm-lang.org/core\_language.html](https://guide.elm-lang.org/core_language.html)
+  - <https://package.elm-lang.org/packages/elm/core/latest/List>
 
 -}
 
@@ -81,7 +81,7 @@ toEvenList list =
 
 {-| 数値をカンマ区切りの文字列にします。
 
-    [1,2,3] ==> "1,2,3"
+    [ 1, 2, 3 ] ==> "1,2,3"
 
 -}
 showNumbers : List Int -> String

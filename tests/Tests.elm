@@ -10,7 +10,7 @@ import T5_Records
 import T6_Functions
 import T7_Lists
 import T8_Maybes
-import T9_Unions
+import T9_CustomTypes
 import Test exposing (..)
 
 
@@ -28,6 +28,6 @@ suite =
         , T6_Functions.suite
         , T7_Lists.suite
         , T8_Maybes.suite
-        , T9_Unions.suite
+        , T9_CustomTypes.suite
         , T10_Decoders.suite
         ]

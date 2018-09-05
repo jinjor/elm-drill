@@ -1,4 +1,4 @@
-module Q1_Numbers exposing (..)
+module Q1_Numbers exposing (add, decrement, divide, divideInt, double, increment, multiply)
 
 {-| 数値
 
@@ -7,8 +7,8 @@ module Q1_Numbers exposing (..)
 
 参照:
 
-  - <https://guide.elm-lang.org/core_language.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Basics>
+  - [https://guide.elm-lang.org/core\_language.html](https://guide.elm-lang.org/core_language.html)
+  - <https://package.elm-lang.org/packages/elm/core/latest/Basics>
 
 -}
 

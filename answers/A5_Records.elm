@@ -9,7 +9,7 @@ module A5_Records exposing (..)
 
   - <https://guide.elm-lang.org/core_language.html>
   - <https://guide.elm-lang.org/types/type_aliases.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Tuple>
+  - <https://package.elm-lang.org/packages/elm/core/latest/Tuple>
 
 -}
 

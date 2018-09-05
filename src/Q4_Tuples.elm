@@ -8,7 +8,7 @@ module Q4_Tuples exposing (..)
 参照:
 
   - <https://guide.elm-lang.org/core_language.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Tuple>
+  - <https://package.elm-lang.org/packages/elm/core/latest/Tuple>
 
 -}
 
@@ -24,7 +24,7 @@ makePair a b =
 -}
 makePair2 : Int -> String -> ( Int, String )
 makePair2 a b =
-    ( a, b )
+    Tuple.pair a b
 
 
 {-| 3つの組を作ります

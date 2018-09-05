@@ -7,7 +7,7 @@ module A8_Maybes exposing (..)
 参照:
 
   - <https://guide.elm-lang.org/error_handling/maybe.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Maybe>
+  - <https://package.elm-lang.org/packages/elm/core/latest/Maybe>
 
 -}
 

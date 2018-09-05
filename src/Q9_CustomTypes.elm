@@ -1,6 +1,6 @@
-module A9_Unions exposing (..)
+module Q9_CustomTypes exposing (..)
 
-{-| ユニオン（union type）
+{-| カスタム型（custom type）
 
   - 値を列挙して新しい型を作る
   - 他の言語の列挙体のようなもの
@@ -9,11 +9,19 @@ module A9_Unions exposing (..)
 
 参照:
 
-  - <https://guide.elm-lang.org/types/union_types.html>
+  - <https://guide.elm-lang.org/types/custom_types.html>
 
 -}
 
-import Q9_Unions exposing (FetchState(..), Language(..), User(..))
+
+{-| 言語を表す `Language` 型を定義します。
+値は「日本語」「英語」「フランス語」の 3 つです。
+`Ja` `En` `Fr` は「値」です。**型ではありません。**
+-}
+type Language
+    = Ja
+    | En
+    | Fr
 
 
 {-| ３ヶ国語による挨拶です。
@@ -30,7 +38,7 @@ greet lang =
             "Hello"
 
         Fr ->
-            "Bonjour"
+            Debug.todo "TODO"
 
 
 {-| 全ての言語を挨拶と組にしたリストを作ります
@@ -38,7 +46,15 @@ greet lang =
 listGreetings : (Language -> String) -> List ( Language, String )
 listGreetings toGreeting =
     [ Ja, En, Fr ]
-        |> List.map (\lang -> ( lang, greet lang ))
+        |> Debug.todo "TODO"
+
+
+{-| ユーザーを表す `User` 型です。
+ログイン中の場合は String 型の名前を持ちます。それ以外はゲストです。
+-}
+type User
+    = LoggedIn String
+    | Guest
 
 
 {-| 訪問中のユーザーに表示するメッセージを返します
@@ -57,21 +73,30 @@ message user =
 -}
 makeLoginUser : String -> User
 makeLoginUser name =
-    LoggedIn name
+    Debug.todo "TODO"
 
 
 {-| 名前のリストを受け取ってログインユーザーのリストを返します
 -}
 makeLoginUsers : List String -> List User
 makeLoginUsers names =
-    List.map LoggedIn names
+    Debug.todo "TODO"
 
 
 {-| ゲストかどうかを判定します
 -}
 isGuest : User -> Bool
 isGuest user =
-    user == Guest
+    user == Debug.todo "TODO"
+
+
+{-| リクエストの処理状態を表します。`a` は任意の型です。
+-}
+type FetchState a
+    = NoRequest
+    | Loading Url
+    | Success Url a
+    | Failure Url Error
 
 
 type alias Url =
@@ -90,12 +115,7 @@ type alias Article =
 -}
 isLoading : FetchState a -> Bool
 isLoading state =
-    case state of
-        Loading _ ->
-            True
-
-        _ ->
-            False
+    Debug.todo "TODO"
 
 
 {-| サーバーから取得した記事の一覧です。
@@ -112,7 +132,7 @@ viewArticles state =
 
         Success _ articles ->
             articles
-                |> List.map .title
+                |> Debug.todo "TODO"
                 |> String.join "\n"
 
         Failure url error ->

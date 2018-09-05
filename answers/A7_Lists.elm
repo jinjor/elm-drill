@@ -7,7 +7,7 @@ module A7_Lists exposing (..)
 参照:
 
   - <https://guide.elm-lang.org/core_language.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/List>
+  - <https://package.elm-lang.org/packages/elm/core/latest/List>
 
 -}
 

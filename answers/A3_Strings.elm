@@ -8,8 +8,8 @@ module A3_Strings exposing (..)
 参照:
 
   - <https://guide.elm-lang.org/core_language.html>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/String>
-  - <http://package.elm-lang.org/packages/elm-lang/core/latest/Char>
+  - <https://package.elm-lang.org/packages/elm/core/latest/String>
+  - <https://package.elm-lang.org/packages/elm/core/latest/Char>
 
 -}
 
