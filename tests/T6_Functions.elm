@@ -16,11 +16,16 @@ suite =
         , testQA "formatTime" (t2 int int) Q.formatTime A.formatTime
         , testQA "trimAndToUpperAndReverse" string Q.trimAndToUpperAndReverse A.trimAndToUpperAndReverse
         , testQA "trimAndToUpperAndReverseWithoutParens" string Q.trimAndToUpperAndReverseWithoutParens A.trimAndToUpperAndReverseWithoutParens
-        , testQA "trimAndToUpperAndReverseComposed" string Q.trimAndToUpperAndReverseComposed A.trimAndToUpperAndReverseComposed
+        , testQA2 "trimAndToUpperAndReverseComposed" unit string Q.trimAndToUpperAndReverseComposed A.trimAndToUpperAndReverseComposed
         , testQA "trimAndToUpperAndReverseLeftToRight" string Q.trimAndToUpperAndReverseLeftToRight A.trimAndToUpperAndReverseLeftToRight
-        , testQA "trimAndToUpperAndReverseLeftToRightComposed" string Q.trimAndToUpperAndReverseLeftToRightComposed A.trimAndToUpperAndReverseLeftToRightComposed
+        , testQA2 "trimAndToUpperAndReverseLeftToRightComposed" unit string Q.trimAndToUpperAndReverseLeftToRightComposed A.trimAndToUpperAndReverseLeftToRightComposed
         , testQA "factorial" (intRange 0 1000) Q.factorial A.factorial
         , testQA "fibonacci" (intRange 0 6) Q.fibonacci A.fibonacci
         , testQA "series" (intRange 0 1000) Q.series A.series
         , testQA "series2" (intRange 0 1000000) Q.series2 A.series2
         ]
+
+
+unit : Fuzzer ()
+unit =
+    constant ()

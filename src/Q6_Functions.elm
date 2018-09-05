@@ -1,4 +1,4 @@
-module Q6_Functions exposing (..)
+module Q6_Functions exposing (factorial, fibonacci, formatTime, greet, greetSomeone, series, series2, series2Help, trimAndToUpperAndReverse, trimAndToUpperAndReverseComposed, trimAndToUpperAndReverseLeftToRight, trimAndToUpperAndReverseLeftToRightComposed, trimAndToUpperAndReverseWithoutParens)
 
 {-| 関数
 
@@ -8,7 +8,7 @@ module Q6_Functions exposing (..)
 
 参照:
 
-  - <https://guide.elm-lang.org/core_language.html>
+  - [https://guide.elm-lang.org/core\_language.html](https://guide.elm-lang.org/core_language.html)
   - <http://package.elm-lang.org/packages/elm-lang/core/latest/Basics>
   - <https://evancz.gitbooks.io/functional-programming-in-elm/>
 
@@ -71,8 +71,8 @@ trimAndToUpperAndReverseWithoutParens s =
 
 {-| `<<` を使うと関数を合成できます
 -}
-trimAndToUpperAndReverseComposed : String -> String
-trimAndToUpperAndReverseComposed =
+trimAndToUpperAndReverseComposed : () -> String -> String
+trimAndToUpperAndReverseComposed _ =
     Debug.todo "(function)" << Debug.todo "(function)" << Debug.todo "(function)"
 
 
@@ -88,8 +88,8 @@ trimAndToUpperAndReverseLeftToRight s =
 
 {-| `>>` を使うと左から右に読めるように合成できます
 -}
-trimAndToUpperAndReverseLeftToRightComposed : String -> String
-trimAndToUpperAndReverseLeftToRightComposed =
+trimAndToUpperAndReverseLeftToRightComposed : () -> String -> String
+trimAndToUpperAndReverseLeftToRightComposed _ =
     Debug.todo "(function)"
         >> Debug.todo "(function)"
         >> Debug.todo "(function)"
