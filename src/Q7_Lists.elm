@@ -222,5 +222,5 @@ zipWithIndex list =
 {-| 指定したインデックスの要素を削除します
 -}
 removeAt : Int -> List a -> List a
-removeAt index =
+removeAt index list =
     Debug.todo "TODO"
