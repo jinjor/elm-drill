@@ -204,7 +204,7 @@ sortByX list =
 
 
 {-| 2つのリストの要素を対にしたリストを作ります
-zip [1,2,3]["a", "b"] ==> [(1,"a"), (2,"b")]
+zip [1,2,3] ["a", "b"] ==> [(1,"a"), (2,"b")]
 -}
 zip : List a -> List b -> List ( a, b )
 zip list1 list2 =
@@ -214,7 +214,7 @@ zip list1 list2 =
 {-| インデックスと要素を対にしたリストを作ります
 zipWithIndex ["foo", "bar"] ==> [(0,"foo"), (1,"bar")]
 -}
-zipWithIndex : List a -> List ( a, b )
+zipWithIndex : List a -> List ( Int, a )
 zipWithIndex list =
     Debug.todo "TODO"
 
@@ -222,5 +222,5 @@ zipWithIndex list =
 {-| 指定したインデックスの要素を削除します
 -}
 removeAt : Int -> List a -> List a
-removeAt index =
+removeAt index list =
     Debug.todo "TODO"
