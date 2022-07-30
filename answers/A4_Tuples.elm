@@ -69,8 +69,8 @@ swap ( a, b ) =
 
 
 {-| 3つの値のうち、最後のものを取得します。
-引数 `first` `second` `thrid` はそれぞれ任意の型を表します。
-やはり、引数の型 `thrid` と戻り値の型 `thrid` は同じ型を表します。
+引数 `first` `second` `third` はそれぞれ任意の型を表します。
+やはり、引数の型 `third` と戻り値の型 `third` は同じ型を表します。
 -}
 getLast : ( first, second, third ) -> third
 getLast ( _, _, thisIsTheLastOne ) =
