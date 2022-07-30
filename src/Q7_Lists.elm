@@ -214,7 +214,7 @@ zip list1 list2 =
 {-| インデックスと要素を対にしたリストを作ります
 zipWithIndex ["foo", "bar"] ==> [(0,"foo"), (1,"bar")]
 -}
-zipWithIndex : List a -> List ( a, b )
+zipWithIndex : List a -> List ( Int, a )
 zipWithIndex list =
     Debug.todo "TODO"
 
