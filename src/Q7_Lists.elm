@@ -204,7 +204,7 @@ sortByX list =
 
 
 {-| 2つのリストの要素を対にしたリストを作ります
-zip [1,2,3]["a", "b"] ==> [(1,"a"), (2,"b")]
+zip [1,2,3] ["a", "b"] ==> [(1,"a"), (2,"b")]
 -}
 zip : List a -> List b -> List ( a, b )
 zip list1 list2 =
